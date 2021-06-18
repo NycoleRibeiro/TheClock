@@ -1,0 +1,70 @@
+body{
+    margin: 0px;    
+}
+
+div#container{
+    background-image: url("imgs/background_clock1280.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 790px;
+}
+
+#head{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.836);
+    margin-top: -40px;
+    line-height: 100px;
+}
+
+h1{
+    color:white;
+    font-size: 45pt;
+}
+
+#menuicon{
+    position: absolute;
+    top:20px;
+    right:10px;
+}
+
+@media(max-width:768px){/*ajeitar!*/
+    h1{
+        color:white;
+        font-size: 30pt;
+        padding-top: 5px;
+    }
+    img.helpicon{
+        width: 26px;
+        padding-bottom: 18px;
+    }
+    div#container{
+        background-image: url("imgs/background_clock1280.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 790px;
+    }
+}
+
+@media(max-width:480px){
+    h1{
+        color:white;
+        font-size: 30pt;
+        padding-top: 5px;
+    }
+    img.helpicon{
+        width: 26px;
+        padding-bottom: 18px;
+    }
+    div#container{
+        background-image: url("imgs/background_clock360.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 530px;
+        margin-top: 20px;
+    }
+}
