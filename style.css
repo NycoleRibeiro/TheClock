@@ -1,27 +1,10 @@
-body{
-    margin: 0px;    
-}
-
-div#container{
-    background-image: url("imgs/background_clock1280.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 790px;
-}
-
 #head{
     width: 100%;
     height: 100px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.836);
+    background-color: rgb(0, 0, 0);
     margin-top: -40px;
     line-height: 100px;
-}
-
-h1{
-    color:white;
-    font-size: 45pt;
 }
 
 #menuicon{
@@ -30,7 +13,60 @@ h1{
     right:10px;
 }
 
-@media(max-width:768px){/*ajeitar!*/
+body{
+    margin: 0px;
+    background-color: #3b1212;
+}
+
+main{
+    background-image: url("imgs/backgroundClock1280.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 750px;
+}
+
+div#container1{
+    position: absolute;
+    left:46%;
+    top:38.5%;
+}
+
+div#container2{
+    position: absolute;
+    left:42%;
+    top:51.5%;
+}
+
+div#container3{
+    position: absolute;
+    left:45.5%;
+    top:65%;
+}
+
+p{
+    font-size: 30pt;
+    color:white;
+    text-shadow: black 2px 2px 4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a :hover{
+    color: #832121;
+    text-shadow: rgb(218, 218, 218) 2px 2px 2px;
+}
+
+h1{
+    color:white;
+    font-size: 45pt;
+}
+
+
+
+@media(max-width:1370px){
     h1{
         color:white;
         font-size: 30pt;
@@ -40,12 +76,35 @@ h1{
         width: 26px;
         padding-bottom: 18px;
     }
-    div#container{
-        background-image: url("imgs/background_clock1280.png");
+    main{
+        background-image: url("imgs/backgroundClock900.png");
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
-        height: 790px;
+        height: 493px;
+    }
+    div#container1{
+        position: absolute;
+        left:45.5%;
+        top:42.5%;
+    }
+    
+    div#container2{
+        position: absolute;
+        left:40.2%;
+        top:57.5%;
+    }
+    
+    div#container3{
+        position: absolute;
+        left:44.5%;
+        top:73%;
+    }
+    
+    p{
+        font-size: 25pt;
+        color:white;
+        text-shadow: black 2px 2px 4px;
     }
 }
 
@@ -54,17 +113,41 @@ h1{
         color:white;
         font-size: 30pt;
         padding-top: 5px;
+        /*FAZER TÍTULO ENCONTAR NA ESQUERDA*/
     }
     img.helpicon{
         width: 26px;
         padding-bottom: 18px;
+        margin-right: 25px;
     }
-    div#container{
-        background-image: url("imgs/background_clock360.png");
+    main{
+        background-image: url("imgs/backgroundClock360.png");
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
-        height: 530px;
-        margin-top: 20px;
+        height: 520px;
+    }
+    div#container1{
+        position: absolute;
+        left:45.5%;
+        top:42.5%;
+    }
+    
+    div#container2{
+        position: absolute;
+        left:40.2%;
+        top:57.5%;
+    }
+    
+    div#container3{
+        position: absolute;
+        left:44.5%;
+        top:73%;
+    }
+    
+    p{
+        font-size: 15pt;
+        color:white;
+        text-shadow: black 2px 2px 4px;
     }
 }
