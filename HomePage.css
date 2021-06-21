@@ -7,7 +7,7 @@
     line-height: 100px;
 }
 
-#menuicon{
+#helpicon{
     position: absolute;
     top:20px;
     right:10px;
@@ -16,6 +16,11 @@
 body{
     margin: 0px;
     background-color: #3b1212;
+}
+
+h1{
+    color:white;
+    font-size: 45pt;
 }
 
 main{
@@ -57,11 +62,6 @@ a{
 a :hover{
     color: #832121;
     text-shadow: rgb(218, 218, 218) 2px 2px 2px;
-}
-
-h1{
-    color:white;
-    font-size: 45pt;
 }
 
 
