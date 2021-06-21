@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Berkshire+Swash&family=Caveat:wght@700&family=Delius+Unicase:wght@700&display=swap');
 
+body{
+    margin: 0px;
+    background-color: #3b1212;
+}
+
 #head{
     width: 100%;
     height: 100px;
@@ -13,11 +18,6 @@
     position: absolute;
     top:20px;
     right:10px;
-}
-
-body{
-    margin: 0px;
-    background-color: #3b1212;
 }
 
 h1{
@@ -34,35 +34,36 @@ main{
     height: 750px;
 }
 
-div#container1{
-    position: absolute;
-    left:46%;
-    top:41.2%;
-}
-
-div#container2{
-    position: absolute;
-    left:42%;
-    top:54.5%;
-}
-
-div#container3{
-    position: absolute;
-    left:45.5%;
-    top:67.5%;
-}
-
-p{
-    font-size: 18pt;
-    color:white;
-    text-shadow: black 2px 2px 4px;
+#navigation{
     /*font-family: 'Caveat', cursive;*/
     /*font-family: 'Amatic SC', cursive;*/
     font-family: 'Delius Unicase', cursive;
+    list-style: none;
+}
+
+#pomodoroLink{
+    position: absolute;
+    left:46%;
+    top:45.2%;
+}
+
+#countdownLink{
+    position: absolute;
+    left:42%;
+    top:58.5%;
+}
+
+#cronometerLink{
+    position: absolute;
+    left:45.5%;
+    top:71.5%;
 }
 
 a{
     text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    text-shadow: black 2px 2px 4px;
 }
 
 a :hover{
@@ -72,16 +73,18 @@ a :hover{
 
 
 
-@media(max-width:1370px){
+@media(max-width:1370px) and (max-height:900px){
     h1{
         color:white;
         font-size: 30pt;
         padding-top: 5px;
     }
+
     img.helpicon{
         width: 26px;
         padding-bottom: 18px;
     }
+
     main{
         background-image: url("imgs/backgroundClock900.png");
         background-repeat: no-repeat;
@@ -89,28 +92,32 @@ a :hover{
         width: 100%;
         height: 493px;
     }
-    div#container1{
+
+    #pomodoroLink{
         position: absolute;
         left:45.5%;
-        top:40%;
+        top:43%;
     }
     
-    div#container2{
+    #countdownLink{
         position: absolute;
         left:40.2%;
-        top:53.5%;
+        top:57.5%;
     }
     
-    div#container3{
+    #cronometerLink{
         position: absolute;
         left:44.5%;
-        top:67.5%;
+        top:71.5%;
+    }
+
+    a{
+        font-size: 14pt;
     }
     
-    p{
-        font-size: 25pt;
-        color:white;
-        text-shadow: black 2px 2px 4px;
+    a :hover{
+        color: #832121;
+        text-shadow: rgb(218, 218, 218) 2px 2px 2px;
     }
 }
 
@@ -133,27 +140,21 @@ a :hover{
         width: 100%;
         height: 520px;
     }
-    div#container1{
+    #pomodoroLink{
         position: absolute;
         left:37%;
         top:45.5%;
     }
     
-    div#container2{
+    #countdownLink{
         position: absolute;
         left:23%;
         top:59.2%;
     }
     
-    div#container3{
+    #cronometerLink{
         position: absolute;
         left:35%;
         top:73.5%;
-    }
-    
-    p{
-        font-size: 18pt;
-        color:white;
-        text-shadow: black 2px 2px 4px;
     }
 }
