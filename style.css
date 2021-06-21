@@ -86,19 +86,19 @@ h1{
     div#container1{
         position: absolute;
         left:45.5%;
-        top:42.5%;
+        top:40%;
     }
     
     div#container2{
         position: absolute;
         left:40.2%;
-        top:57.5%;
+        top:53.5%;
     }
     
     div#container3{
         position: absolute;
         left:44.5%;
-        top:73%;
+        top:67.5%;
     }
     
     p{
@@ -129,24 +129,24 @@ h1{
     }
     div#container1{
         position: absolute;
-        left:45.5%;
-        top:42.5%;
+        left:37%;
+        top:45.5%;
     }
     
     div#container2{
         position: absolute;
-        left:40.2%;
-        top:57.5%;
+        left:23%;
+        top:59.2%;
     }
     
     div#container3{
         position: absolute;
-        left:44.5%;
-        top:73%;
+        left:35%;
+        top:73.5%;
     }
     
     p{
-        font-size: 15pt;
+        font-size: 18pt;
         color:white;
         text-shadow: black 2px 2px 4px;
     }
