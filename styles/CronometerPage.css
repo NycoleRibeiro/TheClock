@@ -26,7 +26,115 @@ h1{
     font-family: 'Berkshire Swash', cursive;
 }
 
+#clockBackground{
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    color: white;
+    font-size: 60px;
+    margin-top: 200px;
+}
+
+.clockBackground1{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground2{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground3{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground4{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground5{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground6{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground7{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground8{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+#btnIniciar{
+    text-align: center;
+    padding-top:35px
+}
+
+#btnPausar{
+    text-align: end;
+    padding-top:35px
+}
+
+#btnZerar{
+    text-align: start;
+    padding-top:35px;
+}
+
+#button{
+    width: 100px;
+    height: 40px;
+    font-size: 17pt;
+    font-family: 'Amatic SC', cursive;
+    background-color: #996E6E;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#button:hover{
+    width: 100px;
+    height: 40px;
+    font-size: 17pt;
+    font-family: 'Amatic SC', cursive;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    border: white 1px solid;
+    transition: 0.3s;
+}
+
 @media(max-width:1370px){
+    main{
+        margin-top: -85px;
+    }
     h1{
         color:white;
         font-size: 30pt;
@@ -36,16 +144,36 @@ h1{
         width: 26px;
         padding-bottom: 18px;
     }
+    img{
+        margin-bottom: 5px;
+    } 
 }
 
 @media(max-width:480px){
     h1{
-        color:white;
+        color:rgb(255, 255, 255);
         font-size: 30pt;
         padding-top: 5px;
     }
+    
     #menuicon{
-        width: 26px;
-        padding-bottom: 18px;
+        width: 15px;
+        margin-right: 10px;
+    }
+    
+    img{
+        width: 20px;
+        margin-bottom: 5px;
+    }
+    
+    #button:hover{
+        width: 100px;
+        height: 40px;
+        font-size: 17pt;
+        font-family: 'Amatic SC', cursive;
+        background-color: #996E6E;
+        color: white;
+        border-radius: 10px;
+        border: none;
     }
 }

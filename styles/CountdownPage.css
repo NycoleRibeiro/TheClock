@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Berkshire+Swash&family=Caveat:wght@700&family=Delius+Unicase:wght@700&display=swap');
 
 #head{
     width: 100%;
@@ -24,6 +24,119 @@ h1{
     color:white;
     font-size: 45pt;
     font-family: 'Berkshire Swash', cursive;
+}
+
+#clockBackground{
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    color: white;
+    font-size: 60px;
+    margin-top: 200px;
+}
+
+.clockBackground1{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground2{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground3{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground4{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground5{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground6{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground7{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground8{
+    background-color: black;
+    width: 50px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+}
+.clockBackground9{
+    font-size: 35px;
+    text-align: end;
+    padding-right: 10px;
+    font-family: 'Caveat', cursive;
+}
+.clockBackground10{
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+#initialTime{
+    width: 135px;
+    height:26px;
+    padding-top: 4px;
+    padding-left: 22px;
+    font-size:15pt;
+    color: #686868;
+}
+
+#btnIniciar{
+    text-align: center;
+    padding-top:0px
+}
+
+#button{
+    width: 90px;
+    height: 35px;
+    font-size: 18pt;
+    font-family: 'Amatic SC', cursive;
+    background-color: #996E6E;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#button:hover{
+    width: 90px;
+    height: 35px;
+    font-size: 18pt;
+    font-family: 'Amatic SC', cursive;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    border: white 1px solid;
+    transition: 0.3s;
 }
 
 @media(max-width:1370px){
