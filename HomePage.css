@@ -95,20 +95,20 @@ a :hover{
 
     #pomodoroLink{
         position: absolute;
-        left:45.5%;
-        top:43%;
+        left:46%;
+        top:49%;
     }
     
     #countdownLink{
         position: absolute;
-        left:40.2%;
-        top:57.5%;
+        left:41.3%;
+        top:63%;
     }
     
     #cronometerLink{
         position: absolute;
-        left:44.5%;
-        top:71.5%;
+        left:45%;
+        top:77%;
     }
 
     a{
@@ -141,19 +141,19 @@ a :hover{
     }
     #pomodoroLink{
         position: absolute;
-        left:37%;
-        top:45.5%;
+        left:34%;
+        top:52.5%;
     }
     
     #countdownLink{
         position: absolute;
-        left:23%;
-        top:59.2%;
+        left:16%;
+        top:66%;
     }
     
     #cronometerLink{
         position: absolute;
-        left:35%;
-        top:73.5%;
+        left:31%;
+        top:80%;
     }
 }

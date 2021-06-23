@@ -155,20 +155,49 @@ h2{
         font-size: 30pt;
         padding-top: 5px;
     }
+    h2{
+        margin-top: 90px;
+        margin-bottom: -20px;
+    }
     #menuicon{
         width: 26px;
         padding-bottom: 18px;
+    }
+    #clockBackground{
+        margin-top: 50px;
     }
 }
 
 @media(max-width:480px){
     h1{
         color:white;
-        font-size: 30pt;
-        padding-top: 5px;
+        font-size: 20pt;
+        padding-top: 10px;
     }
     #menuicon{
         width: 26px;
         padding-bottom: 18px;
     }
+    img{
+        width: 20px;
+        margin-bottom: 10px;
+    }
+    h2{
+        margin-top: 80px;
+        font-size: 45px;
+    }
+    #clockBackground{
+        margin-top: 50px;
+    }
+    .clockBackground9{
+        font-size: 22px;
+    }
+    #initialTime{
+        width: 110px;
+        height: 20px;
+        font-size:12pt;
+        padding-top: 0px;
+        padding-left: 3px;
+    }
+
 }
