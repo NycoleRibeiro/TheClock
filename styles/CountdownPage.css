@@ -148,6 +148,15 @@ h2{
     border: white 1px solid;
     transition: 0.3s;
 }
+.settings{
+    margin-left: 20px;
+    margin-top: 160px;
+}
+
+.config:hover{
+    filter: invert();
+    transition: 0.3s;
+}
 
 @media(max-width:1370px){
     h1{
@@ -165,6 +174,14 @@ h2{
     }
     #clockBackground{
         margin-top: 50px;
+    }
+    .settings{
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+    .config:hover{
+        filter: invert();
+        transition: 0.3s;
     }
 }
 
@@ -198,6 +215,13 @@ h2{
         font-size:12pt;
         padding-top: 0px;
         padding-left: 3px;
+    }
+    .config{
+        width: 40px;
+    }
+    .settings{
+        margin-left: 18px;
+        margin-top: 20px;
     }
 
 }
