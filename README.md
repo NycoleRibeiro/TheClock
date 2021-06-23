@@ -1,4 +1,4 @@
-# TheClock
+# TheClocks
 
 ## AINDA NÃO FINALIZADO, ESTÁ EM FASE DE CRIAÇÃO
 
