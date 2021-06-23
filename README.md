@@ -1,4 +1,7 @@
-# TheClock
+# TheClocks
+
+## AINDA NÃO FINALIZADO, ESTÁ EM FASE DE CRIAÇÃO
+
 Site com vários tipos de marcação de tempo
 * Cronômetro
 * Contagem Regressiva
