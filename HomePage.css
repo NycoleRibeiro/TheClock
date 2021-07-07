@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Berkshire+Swash&family=Caveat:wght@700&family=Delius+Unicase:wght@700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    margin: 0px;
     background-color: #3b1212;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+
+}
+
 #head{
-    width: 100%;
-    height: 100px;
+    width: 100vw;
     text-align: center;
     background-color: rgb(0, 0, 0);
-    margin-top: -40px;
     line-height: 100px;
 }
 
@@ -30,8 +44,8 @@ main{
     background-image: url("imgs/backgroundClock1280.png");
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 750px;
+    width: 100vw;
+    height: 100vh;
 }
 
 #navigation{
@@ -42,21 +56,16 @@ main{
 }
 
 #pomodoroLink{
-    position: absolute;
-    left:46%;
-    top:45.2%;
+    margin-top: 38.5vh;
+
 }
 
 #countdownLink{
-    position: absolute;
-    left:42%;
-    top:58.5%;
+    margin-top: 10vh;
 }
 
 #cronometerLink{
-    position: absolute;
-    left:45.5%;
-    top:71.5%;
+    margin-top: 10vh;
 }
 
 a{
@@ -87,28 +96,10 @@ a :hover{
 
     main{
         background-image: url("imgs/backgroundClock900.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100%;
-        height: 493px;
     }
 
-    #pomodoroLink{
-        position: absolute;
-        left:46%;
-        top:49%;
-    }
-    
-    #countdownLink{
-        position: absolute;
-        left:41.3%;
-        top:63%;
-    }
-    
-    #cronometerLink{
-        position: absolute;
-        left:45%;
-        top:77%;
+    #navigation{
+        margin-top: -2.5vh;
     }
 
     a{
@@ -125,35 +116,17 @@ a :hover{
     h1{
         color:white;
         font-size: 30pt;
-        padding-top: 5px;
     }
     img.helpicon{
         width: 26px;
-        padding-bottom: 18px;
+        padding-bottom: 14px;
         margin-right: 25px;
     }
     main{
         background-image: url("imgs/backgroundClock360.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100%;
-        height: 520px;
-    }
-    #pomodoroLink{
-        position: absolute;
-        left:34%;
-        top:52.5%;
     }
     
-    #countdownLink{
-        position: absolute;
-        left:16%;
-        top:66%;
-    }
-    
-    #cronometerLink{
-        position: absolute;
-        left:31%;
-        top:80%;
+    #navigation{
+        padding-top: 2vh;
     }
 }
