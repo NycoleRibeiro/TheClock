@@ -18,24 +18,29 @@
         </div>
     </header>
     <main>
-        <table id="clockBackground">
-            <tr>
-                <td class="clockBackground1">0</td>
-                <td class="clockBackground2">0</td>
-                <td class="clockBackground3">:</td>
-                <td class="clockBackground4">0</td>
-                <td class="clockBackground5">0</td>
-                <td class="clockBackground6">:</td>
-                <td class="clockBackground7">0</td>
-                <td class="clockBackground8">0</td>
-            </tr>
+        <div class="container">
+            <div class="countdown">
+                <div>
+                    <h1 id="horas">00</h1>
+                    <p>Horas</p>
+                </div>
+                <div>
+                    <h1 id="minutos">00</h1>
+                    <p>Minutos</p>
+                </div>
+                <div>
+                    <h1 id="segundos">00</h1>
+                    <p>Segundos</p>
+                </div>
+            </div>
             
-            <tr>
-                <td id="btnPausar" colspan="3"><button id="button">iniciar</button></td>
-                <td id="btnIniciar" colspan="2"><button id="button">pausar</button></td>
-                <td id="btnZerar" colspan="3"><button id="button">zerar</button></td>
-            </tr>
-        </table>
+            <div id="buttons">
+                <div id="btnIniciar"><button class="button">iniciar</button></div>
+                <div id="btnPausar"><button class="button">pausar</button></div>
+                <div id="btnZerar"><button class="button">zerar</button></div>
+            </div>
+            
+        </div>
     </main>
 </body>
 </html>
