@@ -1,140 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Berkshire+Swash&family=Caveat:wght@700&family=Delius+Unicase:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Rubik+Mono+One&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3b1212;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
 #head{
-    width: 100%;
-    height: 100px;
+    width: 100vw;
     text-align: center;
     background-color: rgb(0, 0, 0);
-    margin-top: -40px;
     line-height: 100px;
 }
 
 #menuicon{
     position: absolute;
-    top: 5px;
-    right: 10px;
-}
-
-body{
-    margin: 0px;
-    background-color: #3b1212;
+    top: 1vh;
+    right: 1vw;
 }
 
 h1{
     color:white;
-    font-size: 45pt;
+    font-size: 3vw;
     font-family: 'Berkshire Swash', cursive;
 }
 
-#clockBackground{
-    width: 50%;
-    height: 150px;
-    margin: auto;
-    color: white;
-    font-size: 60px;
-    margin-top: 250px;
+main{
+    margin-top: 12vh;
 }
 
-.clockBackground1{
-    background-color: black;
-    width: 50px;
-    height: 140px;
-    text-align: center;
-    border-radius: 10px;
+.countdown {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.clockBackground2{
-    background-color: black;
-    width: 50px;
-    height: 140px;
-    text-align: center;
-    border-radius: 10px;
+.countdown h1 {
+    font-size: calc(10px + 8vw);
+    text-shadow: 0 0 10px whitesmoke;
 }
 
-.clockBackground3{
-    background-color: black;
-    width: 50px;
-    height: 140px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.clockBackground4{
-    background-color: black;
-    width: 50px;
-    height: 140px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.clockBackground5{
-    background-color: black;
-    width: 50px;
-    height: 140px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.clockBackground6{
-    background-color: black;
-    width: 50px;
-    height: 140px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.clockBackground7{
-    background-color: black;
-    width: 50px;
-    height: 140px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.clockBackground8{
-    background-color: black;
-    width: 50px;
-    height: 140px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-#initialTime{
-    width: 135px;
-    height:26px;
-    padding-top: 4px;
-    padding-left: 22px;
-    font-size:15pt;
-    color: #686868;
-}
-
-#btnIniciar{
-    text-align: center;
-    padding-top:0px
-}
-
-#button{
-    width: 90px;
-    height: 35px;
-    font-size: 18pt;
-    font-family: 'Amatic SC', cursive;
-    background-color: #996E6E;
-    color: white;
-    border-radius: 10px;
-    border: none;
-}
-
-#button:hover{
-    width: 90px;
-    height: 35px;
-    font-size: 18pt;
-    font-family: 'Amatic SC', cursive;
-    background-color: #000000;
-    color: white;
-    border-radius: 10px;
-    border: white 1px solid;
-    transition: 0.3s;
+.countdown p {
+    color: whitesmoke;
 }
 
 .frase{
@@ -142,92 +65,35 @@ h1{
     text-align: center;
     padding-right: 10px;
     font-family: 'Caveat', cursive;
+    color: white;
 }
 
 .sessions{
     font-size: 22px;
     text-align: center;
     padding-top: 300px;
+    color: white;
 }
 
-.settings{
-    margin-left: 20px;
+.settings {
+    position: absolute;
+    bottom: 1.2vh;
+    left: 1vw;
 }
 
-.config:hover{
+.config {
+    width: calc(20px + 2vw);
+}
+
+.config:hover {
     filter: invert();
     transition: 0.3s;
 }
 
 @media(max-width:1370px){
-    h1{
-        color:white;
-        font-size: 30pt;
-        padding-top: 5px;
-    }
-    #menuicon{
-        width: 26px;
-        padding-bottom: 18px;
-    }
-    #clockBackground{
-        margin-top: 140px;
-    }
-    .sessions{
-        padding-top: 170px;
-        font-size: 14pt;
-    }
-    .settings{
-        margin-left: 20px;
-        margin-top: -50px;
-    }
-    .config:hover{
-        filter: invert();
-        transition: 0.3s;
-    }
+    
 }
 
 @media(max-width:480px){
-    h1{
-        color:white;
-        font-size: 30pt;
-        padding-top: 5px;
-    }
-    #menuicon{
-        width: 26px;
-        padding-bottom: 18px;
-    }
-    img.menu{
-        width: 20px;
-        margin-bottom: 10px;
-    }
-    h2{
-        margin-top: 80px;
-        font-size: 45px;
-    }
-    #clockBackground{
-        margin-top: 50px;
-    }
-    .clockBackground9{
-        font-size: 22px;
-    }
-    #initialTime{
-        width: 110px;
-        height: 20px;
-        font-size:12pt;
-        padding-top: 0px;
-        padding-left: 3px;
-    }
-    .frase{
-        font-size: 20pt;
-    }
-    .sessions{
-        padding-top: 200px;
-        font-size: 15pt;
-    }
-    .config{
-        width: 40px;
-    }
-    .settings{
-        margin-left: 18px;
-        margin-top: -35px;
-    }
+
+}

@@ -69,10 +69,10 @@ h2{
 }
 
 .startButton {
-    margin-top: 8vw;
+    margin-top: 17vw;
 }
 
-#button{
+#button {
     width: 90px;
     height: 35px;
     font-size: 18pt;
@@ -83,7 +83,7 @@ h2{
     border: none;
 }
 
-#button:hover{
+#button:hover {
     width: 90px;
     height: 35px;
     font-size: 18pt;
@@ -95,25 +95,27 @@ h2{
     transition: 0.3s;
 }
 
-.settings{
+.settings {
     position: absolute;
     bottom: 1.2vh;
     left: 1vw;
 }
 
-.config{
+.config {
     width: calc(20px + 2vw);
 }
 
-.config:hover{
+.config:hover {
     filter: invert();
     transition: 0.3s;
 }
 
 @media(max-width:1370px){
-    
+    .startButton {
+        margin-top: 9vw;
+    }
 }
 
 @media(max-width:480px){
-    
+
 }
