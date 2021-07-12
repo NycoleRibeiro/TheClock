@@ -81,6 +81,7 @@ h2{
     color: white;
     border-radius: 10px;
     border: none;
+    cursor:pointer;
 }
 
 #button:hover {
@@ -99,6 +100,7 @@ h2{
     position: absolute;
     bottom: 1.2vh;
     left: 1vw;
+    cursor:pointer;
 }
 
 .config {
@@ -110,9 +112,137 @@ h2{
     transition: 0.3s;
 }
 
+
+
+/*CSS MODAL*/
+
+.modal-container {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b1919a8;
+    top: 0vh;
+    left: 0vw;
+    z-index: 2000;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.modal {
+    width: 30vw;
+    height: 25vh;
+    top: 40vh;
+    left: 35vw;
+    background: #1a0303;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgba(255, 255, 255, 0.548);
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+.closeButton {
+    float: right;
+    margin-right: 0.2vw;
+    margin-top: -4.6vh;
+    width: 18px;
+    border:#9b9b9b solid 1px;
+    border-radius: 100px;
+    padding-bottom: 1px;
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+.closeButton:hover{
+    background-color: rgb(36, 0, 0);
+    color: white;
+    transition: 0.2s;
+}
+
+.subtitulo{
+    font-size: calc(10px + 0.7vw);
+    color: whitesmoke;
+    margin-bottom: 4vh;
+    margin-top: -5vh;
+    background-color: rgb(14, 1, 1);
+    box-shadow: 0 -5px 10px 2px rgba(255, 255, 255, 0.548);
+    border-radius: 10px;
+    width: 30vw;
+    height: 4.2vh;
+    padding-top: 6px;
+}
+
+.input{
+    border-radius: 5px;
+    text-align: center;
+}
+
+.titleInput{
+    width: 11vw;
+    height: 3vh;
+}
+
+.timeInput{
+    width: 11vw;
+    height: 3vh;
+}
+
+.paragrafo{
+    font-size: calc(10px + 0.5vw);
+    color: white;
+}
+
+.observacao{
+    font-size: calc(8px + 0.3vw);
+    color: #a5a5a5;
+    margin-bottom: 20px;
+}
+
+.button{
+    color: #000000; 
+    background-color: #ffffff;
+    border:#9b9b9b solid 1px;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    float: right;
+    margin-bottom: -16px;
+    margin-right: 5px;
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+.button:hover {
+    background-color:#000000;
+    color: white;
+    border:#181818 solid 1px;
+    transition: 0.2s;
+}
+
 @media(max-width:1370px){
     .startButton {
         margin-top: 9vw;
+    }
+    .subtitulo{
+        padding-top: 0px;
     }
 }
 

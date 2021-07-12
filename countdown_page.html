@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/CountdownPage.css">
     <link rel="shortcut icon" href="imgs/favicon.png" type="png">
+    <script src="scripts/countdown.js"></script>
     <title>TheClocks</title>
 </head>
 <body>
@@ -41,11 +42,25 @@
             </div>
 
             <div class="settings">
-                <a href="http://">
-                    <img class="config" src="imgs/settings50.png">
-                </a>
+                <img class="config" src="imgs/settings50.png">
             </div>
         </main>
+    </div>
+
+    <div id="modal-settings" class="modal-container">
+        <div class="modal">
+            <button class="closeButton">x</button>
+            <h3 class="subtitulo">Configurações da Página</h3>
+            <form action="">
+                <p class="paragrafo">Digite o título para a contagem</p>
+                <input type="text" class="input titleInput" placeholder="Digite o título">
+                <p class="observacao">*Deixe em branco se não quiser título*</p>
+                <p class="paragrafo">Digite o tempo inicial da contagem</p>
+                <input type="text" class="input timeInput" placeholder="hh:mm:ss">
+                <p class="observacao">*Digite o tempo no formato hh:mm:ss*</p>
+                <input type="button" class="button" value="OK">
+            </form>
+        </div>
     </div>
 </body>
 </html>
