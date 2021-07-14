@@ -8,6 +8,7 @@ PARTE HTML E CSS
 > Ajustar modal no media modo cel do countdown
 > Ajustar pág pomodoro no media notebook
 > Ajustar botão de ok do modal no media notebook do contagem regressiva
+> 
 
 PARTE JAVASCRIPT
 
@@ -16,7 +17,10 @@ PARTE JAVASCRIPT
 > Fazer o pomodoro com código do contagem regressiva
 > Fazer o modal salvar as alterações
 > Fazer o menu
+>
 
 EXTRAS
 
 > Gravar o video pra página de ajuda
+> Adicionar efeito máquina de escrever na frase do pomodoro 
+  https://www.youtube.com/watch?v=zx2axQoY_YM&t=23s
