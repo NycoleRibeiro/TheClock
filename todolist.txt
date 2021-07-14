@@ -1,6 +1,5 @@
 PARTE HTML E CSS
 
-> Adicionar modal na página do pomodoro
 > 
 
 PARTE JAVASCRIPT
