@@ -1,5 +1,7 @@
 // ta funcionando agora esta poha que por algum motivo não funciona sem o window.onload que eu nem sei pra q serve, é isso
 
+
+// FUNÇÕES DO MODAL
 window.onload=function(){
     let configButton = document.querySelector(".config");
     let modal = document.querySelector('#modal-settings');
