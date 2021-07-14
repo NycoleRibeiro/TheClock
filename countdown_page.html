@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/CountdownPage.css">
-    <link rel="shortcut icon" href="imgs/favicon.png" type="png">
+    <link rel="stylesheet" href="styles/menu.css">
+    <script src="scripts/menu.js"></script>
     <script src="scripts/countdown.js"></script>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="png">
     <title>TheClocks</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
             <div>
                 <h1>Contagem Regressiva</h1>
                 <nav id="menuicon">
-                    <a href="index.html"><img src="imgs/menuicon30.png"></a>
+                    <img src="imgs/menuicon30.png">
                 </nav>
             </div>
         </header>
@@ -60,6 +62,24 @@
                 <p class="observacao">*Digite o tempo no formato hh:mm:ss*</p>
                 <input type="button" class="button" value="OK">
             </form>
+        </div>
+    </div>
+
+    <div id="menu-principal" class="menu-container">
+        <div class="menu">
+            <nav>
+                <ul id="navigation">
+                    <a href="pomodoro_page.html">
+                        <li id="pomodoroLink">Pomodoro</li>
+                    </a>
+                    <a href="countdown_page.html">
+                        <li id="countdownLink">Contagem regressiva</li>
+                    </a>
+                    <a href="cronometer_page.html">
+                        <li id="cronometerLink">Cronômetro</li>
+                    </a>
+                </ul>
+            </nav>
         </div>
     </div>
 </body>

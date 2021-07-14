@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/HelpPage.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <script src="scripts/menu.js"></script>
     <link rel="shortcut icon" href="imgs/favicon.png" type="png">
     <title>TheClocks</title>
 </head>
@@ -13,7 +15,7 @@
         <div>
             <h1>Como Usar</h1>
             <nav id="menuicon">
-                <a href="index.html"><img src="imgs/menuicon30.png"></a>
+                <img src="imgs/menuicon30.png">
             </nav>
         </div>
     </header>
@@ -21,5 +23,23 @@
     <main>
         <iframe id="caixa" src="https://www.youtube.com/embed/0cibzrkOnjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </main>
+
+    <div id="menu-principal" class="menu-container">
+        <div class="menu">
+            <nav>
+                <ul id="navigation">
+                    <a href="pomodoro_page.html">
+                        <li id="pomodoroLink">Pomodoro</li>
+                    </a>
+                    <a href="countdown_page.html">
+                        <li id="countdownLink">Contagem regressiva</li>
+                    </a>
+                    <a href="cronometer_page.html">
+                        <li id="cronometerLink">Cronômetro</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

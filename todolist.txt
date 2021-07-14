@@ -1,6 +1,6 @@
 PARTE HTML E CSS
 
-> 
+> colocar hover no menu
 
 PARTE JAVASCRIPT
 
@@ -16,3 +16,6 @@ EXTRAS
 > Gravar o video pra página de ajuda
 > Adicionar efeito máquina de escrever na frase do pomodoro 
   https://www.youtube.com/watch?v=zx2axQoY_YM&t=23s
+
+
+modal-settings -- menu-principal
