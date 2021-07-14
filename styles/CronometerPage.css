@@ -75,6 +75,7 @@ main{
     border: none;
     margin-right: 2vw;
     margin-left: 2vw;
+    cursor: pointer;
 }
 
 .button:hover{
@@ -95,5 +96,31 @@ main{
 }
 
 @media(max-width:480px){
+    .button{
+        width: 14vw;
+        height: 5vh;
+        font-size: calc(12px + 0.5vw);
+        font-family: 'Amatic SC', cursive;
+        background-color: #996E6E;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        padding-bottom: 1px;
+    }
     
+    .button:hover{
+        width: 14vw;
+        height: 5vh;
+        font-size: calc(12px + 0.5vw);
+        font-family: 'Amatic SC', cursive;
+        background-color: #996E6E;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        padding-bottom: 1px;
+    }
 }

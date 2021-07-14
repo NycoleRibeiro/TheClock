@@ -37,11 +37,41 @@
             <div class="frase">Tempo de foco...</div>
             <div class="sessions">Sessões Restantes: <span class="sessions_number">3</span></div>
             <div class="settings">
-                <a href="http://">
-                    <img class="config" src="imgs/settings50.png">
-                </a>
+                <img class="config" src="imgs/settings50.png">
             </div>
         </div>
     </main>
+
+    <div id="modal-settings" class="modal-container mostrar">
+        <div class="modal">
+            <button class="closeButton">x</button>
+            <h3 class="subtitulo">Configurações da Página</h3>
+            <form id="form" action="">
+                <table>
+                    <tr>
+                        <td><p class="paragrafo">Tempo de foco</p></td>
+                        <td><p class="paragrafo">Tempo de pausa</p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="input focustimeInput" value="00:30:00"></td>
+                        <td><input type="text" class="input stoptimeInput" value="00:15:00"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="paragrafo">Quantidade de sessões </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" class="input sessionsInput" min="1" value="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" class="button" value="OK"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

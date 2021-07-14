@@ -1,13 +1,6 @@
 PARTE HTML E CSS
 
-> Corrigir página pomodoro está com rolagem
 > Adicionar modal na página do pomodoro
-> Ajustar h1 no media modo cel do countdown e pomodoro
-> Ajustar frases grandes no media modo cel do pomodoro
-> Ajustar botões no media modo cel do cronometer
-> Ajustar modal no media modo cel do countdown
-> Ajustar pág pomodoro no media notebook
-> Ajustar botão de ok do modal no media notebook do contagem regressiva
 > 
 
 PARTE JAVASCRIPT

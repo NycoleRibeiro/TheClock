@@ -36,7 +36,7 @@ body {
 
 h1{
     color:white;
-    font-size: 3vw;
+    font-size: calc(20px + 2.5vw);
     font-family: 'Berkshire Swash', cursive;
 }
 
@@ -224,7 +224,6 @@ h2{
     height: 25px;
     border-radius: 20px;
     float: right;
-    margin-bottom: -16px;
     margin-right: 5px;
     font-weight: bolder;
     cursor:pointer;
@@ -244,8 +243,65 @@ h2{
     .subtitulo{
         padding-top: 0px;
     }
+    .modal {
+        height: 33vh;
+    }
+    #form{
+        padding-top: 1.5vh;
+    }
+
 }
 
 @media(max-width:480px){
+    .settings {
+        position: absolute;
+        bottom: 1vh;
+        left: 2vw;
+        cursor:pointer;
+    }
+    
+    .config {
+        width: calc(20px + 4vw);
+    }
+    
+    .config:hover {
+        filter: none;
+    }
 
+    .modal {
+        width: 80vw;
+        height: 35vh;
+        top: 40vh;
+        left: 35vw;
+        background: #1a0303;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px 5px rgba(255, 255, 255, 0.548);
+    }
+
+    .subtitulo{
+        font-size: calc(14px + 1vw);
+        width: 80vw;
+        padding-top: 3px;
+    }
+
+    .titleInput{
+        width: 60vw;
+        height: 3vh;
+    }
+    
+    .timeInput{
+        width: 60vw;
+        height: 3vh;
+    }
+    
+    .paragrafo{
+        font-size: calc(15px + 0.5vw);
+        color: white;
+    }
+    
+    .observacao{
+        font-size: calc(13px + 0.3vw);
+        color: #a5a5a5;
+        margin-bottom: 20px;
+    }
 }

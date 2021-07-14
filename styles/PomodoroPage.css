@@ -14,8 +14,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 77vh;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
@@ -36,7 +36,7 @@ body {
 
 h1{
     color:white;
-    font-size: 3vw;
+    font-size: calc(20px + 2.5vw);
     font-family: 'Berkshire Swash', cursive;
 }
 
@@ -61,7 +61,7 @@ main{
 }
 
 .frase{
-    font-size: 35px;
+    font-size: calc(20px + 1.5vw);
     text-align: center;
     padding-right: 10px;
     font-family: 'Caveat', cursive;
@@ -79,6 +79,7 @@ main{
     position: absolute;
     bottom: 1.2vh;
     left: 1vw;
+    cursor: pointer;
 }
 
 .config {
@@ -90,10 +91,146 @@ main{
     transition: 0.3s;
 }
 
+/*CSS MODAL*/
+
+.modal-container {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b1919a8;
+    top: 0vh;
+    left: 0vw;
+    z-index: 2000;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.modal {
+    width: 30vw;
+    height: 25vh;
+    top: 40vh;
+    left: 35vw;
+    background: #1a0303;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgba(255, 255, 255, 0.548);
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+.closeButton {
+    float: right;
+    margin-right: 0.2vw;
+    margin-top: -4.6vh;
+    width: 18px;
+    border:#9b9b9b solid 1px;
+    border-radius: 100px;
+    padding-bottom: 1px;
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+.closeButton:hover{
+    background-color: rgb(36, 0, 0);
+    color: white;
+    transition: 0.2s;
+}
+
+.subtitulo{
+    font-size: calc(10px + 0.7vw);
+    color: whitesmoke;
+    margin-bottom: 4vh;
+    margin-top: -5vh;
+    background-color: rgb(14, 1, 1);
+    box-shadow: 0 -5px 10px 2px rgba(255, 255, 255, 0.548);
+    border-radius: 10px;
+    width: 30vw;
+    height: 4.2vh;
+    padding-top: 6px;
+}
+
+table {
+    width: 100%;
+}
+
+.input{
+    border-radius: 5px;
+    text-align: center;
+    float: center;
+}
+
+.sessionsInput {
+    width: 5vw;
+    height: 3vh;
+}
+
+.focustimeInput{
+    width: 11vw;
+    height: 3vh;
+}
+
+.stoptimeInput{
+    width: 11vw;
+    height: 3vh;
+}
+
+.paragrafo{
+    font-size: calc(10px + 0.5vw);
+    color: white;
+    padding-top: 1vw;
+    float: center;
+}
+
+.button{
+    color: #000000; 
+    background-color: #ffffff;
+    border:#9b9b9b solid 1px;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 22px;
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+.button:hover {
+    background-color:#000000;
+    color: white;
+    border:#181818 solid 1px;
+    transition: 0.2s;
+}
+
 @media(max-width:1370px){
+    .sessions{
+        font-size: 20px;
+        padding-top: 200px;
+    }
     
+    .container {
+        height: 72vh;     
+    }
 }
 
 @media(max-width:480px){
-
+    
 }
