@@ -1,5 +1,9 @@
 /*CSS MENU*/
 
+#mainTitle :hover{
+    color: white;
+}
+
 #menuicon-img:hover{
     filter: invert(30%);
     transition: filter .5s;
@@ -58,7 +62,7 @@ a{
 }
 
 a :hover{
-    color: rgb(252, 186, 177);
+    color: rgb(129, 89, 83)
 }
 
 li {
