@@ -8,14 +8,11 @@ PARTE JAVASCRIPT
 > Fazer a contagem regressiva funcionar
 > Fazer o pomodoro com código do contagem regressiva
 > Fazer o modal salvar as alterações
-> Fazer o menu
->
+> Verificação de form no modal
+> Não esquecer dos áudios
 
 EXTRAS
 
 > Gravar o video pra página de ajuda
 > Adicionar efeito máquina de escrever na frase do pomodoro 
   https://www.youtube.com/watch?v=zx2axQoY_YM&t=23s
-
-
-modal-settings -- menu-principal
