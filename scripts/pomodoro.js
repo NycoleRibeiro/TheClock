@@ -1,5 +1,5 @@
-// FUNÇÕES DO MODAL
 window.onload=function(){
+    // FUNÇÕES DO MODAL
     let configButton = document.querySelector(".config");
     let modal = document.querySelector('#modal-settings');
 
@@ -12,6 +12,20 @@ window.onload=function(){
             };
             if(e.target.className == 'button') {
                 modal.classList.remove('mostrar') // por enquanto ta só fechando, mas ainda tem q salvar os input
+            };
+        })
+    })
+
+    // FUNÇÕES DO MENU
+    let menuButton = document.querySelector("#menuicon");
+    let menu = document.querySelector('#menu-principal');
+
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('mostrar-menu');
+        menu.addEventListener('click', (ev) => {
+            console.log(ev.target);
+            if(e.target.id != 'menu-principal') {
+                menu.classList.remove('mostrar-menu')
             };
         })
     })

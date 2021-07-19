@@ -1,8 +1,6 @@
 PARTE HTML E CSS
 
-> Tornar help page responsivo
-> colocar hover no menu
-> colocar css do menu para cada pág (js talvez funcione pra tds)
+>
 
 PARTE JAVASCRIPT
 

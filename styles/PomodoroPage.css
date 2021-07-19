@@ -91,6 +91,8 @@ main{
     transition: 0.3s;
 }
 
+
+
 @media(max-width:1370px) and (max-height:900px){
     .sessions{
         font-size: 20px;

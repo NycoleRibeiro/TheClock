@@ -1,10 +1,7 @@
-// ta funcionando agora esta poha que por algum motivo não funciona sem o window.onload que eu nem sei pra q serve, é isso
-
-
-// FUNÇÕES DO MODAL
 window.onload=function(){
+    // FUNÇÕES DO MODAL
     let configButton = document.querySelector(".config");
-    let modal = document.querySelector('#modal-settings');
+    let modal = document.querySelector("#modal-settings");
 
     configButton.addEventListener('click', () => {
         modal.classList.toggle('mostrar');
@@ -15,6 +12,19 @@ window.onload=function(){
             };
             if(e.target.className == 'button') {
                 modal.classList.remove('mostrar') // por enquanto ta só fechando, mas ainda tem q salvar os input
+            };
+        })
+    })
+
+    // FUNÇÕES DO MENU
+    let menuButton = document.querySelector("#menuicon");
+    let menu = document.querySelector('#menu-principal');
+
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('mostrar-menu');
+        menu.addEventListener('click', (e) => {
+            if(e.target.id != 'menu-principal') {
+                menu.classList.remove('mostrar-menu')
             };
         })
     })

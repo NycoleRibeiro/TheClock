@@ -1,5 +1,5 @@
-// FUNÇÕES DO MENU
 window.onload=function(){
+    // FUNÇÕES DO MENU
     let menuButton = document.querySelector("#menuicon");
     let menu = document.querySelector('#menu-principal');
 

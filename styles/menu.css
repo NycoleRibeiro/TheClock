@@ -12,12 +12,10 @@
     justify-content: flex-end;
     align-items: top;
     text-align: center;
-    width: 90vw;
-    height: 70vh;
     /*top: 10.6vh;*/
     top: 100px;
     right: 0vw;
-    z-index: 3000;
+    z-index: 1000;
 }
 
 .menu-container.mostrar-menu {
@@ -25,7 +23,7 @@
 }
 
 .menu {
-    width: 15vw;
+    width: calc(90px + 10vw);
     height: 44.8vh;
     background: #000000;
 }
@@ -60,7 +58,7 @@ a{
 }
 
 a :hover{
-    color: #832121;
+    color: rgb(76, 0, 255);
 }
 
 li {
