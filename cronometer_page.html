@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/CronometerPage.css">
-    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/menuV2.css">
     <script src="scripts/menu.js"></script>
     <link rel="shortcut icon" href="imgs/favicon.png" type="png">
-    <title>TheClocks</title>
+    <title>Cronômetro</title>
 </head>
 <body>
     <header id="head">
         <div>
             <h1>Cronômetro</h1>
-            <nav id="menuicon">
-                <img src="imgs/menuicon30.png">
-            </nav>
+            <div id="menuicon">
+                <img id="menuicon-img" src="imgs/menuicon30.png">
+            </div>
+        </div>
+        <!--PARTE DO MENU POP UP-->
+        <div id="menu-principal" class="menu-container mostrar-menu">
+            <div class="menu">
+                <nav>
+                    <ul id="navigation">
+                        <a href="pomodoro_page.html">
+                            <li id="pomodoroLink">Pomodoro</li>
+                        </a>
+                        <a href="countdown_page.html">
+                            <li id="countdownLink">Contagem regressiva</li>
+                        </a>
+                        <a href="cronometer_page.html">
+                            <li id="cronometerLink">Cronômetro</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -41,23 +59,6 @@
                 <div id="btnPausar"><button class="button">pausar</button></div>
                 <div id="btnZerar"><button class="button">zerar</button></div>
             </div>            
-        </div>
-        <div id="menu-principal" class="menu-container">
-            <div class="menu">
-                <nav>
-                    <ul id="navigation">
-                        <a href="pomodoro_page.html">
-                            <li id="pomodoroLink">Pomodoro</li>
-                        </a>
-                        <a href="countdown_page.html">
-                            <li id="countdownLink">Contagem regressiva</li>
-                        </a>
-                        <a href="cronometer_page.html">
-                            <li id="cronometerLink">Cronômetro</li>
-                        </a>
-                    </ul>
-                </nav>
-            </div>
         </div>
     </main>
 </body>

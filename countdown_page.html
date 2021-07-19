@@ -5,20 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/CountdownPage.css">
-    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/menuV1.css">
     <script src="scripts/menu.js"></script>
     <script src="scripts/countdown.js"></script>
     <link rel="shortcut icon" href="imgs/favicon.png" type="png">
-    <title>TheClocks</title>
+    <title>Contagem Regressiva</title>
 </head>
 <body>
     <div class="container">
         <header id="head">
             <div>
                 <h1>Contagem Regressiva</h1>
-                <nav id="menuicon">
-                    <img src="imgs/menuicon30.png">
-                </nav>
+                <div id="menuicon">
+                    <img id="menuicon-img" src="imgs/menuicon30.png">
+                </div>
+            </div>
+            <!--PARTE DO MENU POP UP-->
+            <div id="menu-principal" class="menu-container mostrar-menu">
+                <div class="menu">
+                    <nav>
+                        <ul id="navigation">
+                            <a href="pomodoro_page.html">
+                                <li id="pomodoroLink">Pomodoro</li>
+                            </a>
+                            <a href="countdown_page.html">
+                                <li id="countdownLink">Contagem regressiva</li>
+                            </a>
+                            <a href="cronometer_page.html">
+                                <li id="cronometerLink">Cronômetro</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -62,24 +80,6 @@
                 <p class="observacao">*Digite o tempo no formato hh:mm:ss*</p>
                 <input type="button" class="button" value="OK">
             </form>
-        </div>
-    </div>
-
-    <div id="menu-principal" class="menu-container">
-        <div class="menu">
-            <nav>
-                <ul id="navigation">
-                    <a href="pomodoro_page.html">
-                        <li id="pomodoroLink">Pomodoro</li>
-                    </a>
-                    <a href="countdown_page.html">
-                        <li id="countdownLink">Contagem regressiva</li>
-                    </a>
-                    <a href="cronometer_page.html">
-                        <li id="cronometerLink">Cronômetro</li>
-                    </a>
-                </ul>
-            </nav>
         </div>
     </div>
 </body>

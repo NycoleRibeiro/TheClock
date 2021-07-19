@@ -1,16 +1,23 @@
 /*CSS MENU*/
 
+#menuicon-img:hover{
+    filter: invert(30%);
+    transition: filter .5s;
+    cursor: pointer;
+}
+
 .menu-container {
-    position: fixed;
+    position: absolute;
     display: none;
     justify-content: flex-end;
     align-items: top;
     text-align: center;
-    width: 100vw;
-    height: 100vh;
-    top: 10.6vh;
+    width: 90vw;
+    height: 70vh;
+    /*top: 10.6vh;*/
+    top: 100px;
     right: 0vw;
-    z-index: 2000;
+    z-index: 3000;
 }
 
 .menu-container.mostrar-menu {
@@ -18,8 +25,8 @@
 }
 
 .menu {
-    width: 12vw;
-    height: 20.5vh;
+    width: 15vw;
+    height: 44.8vh;
     background: #000000;
 }
 
@@ -67,20 +74,27 @@ li {
     border-top: #0a0a0a solid 1px;
 }
 
-@media(max-width:1370px){
+@media(max-width:1370px) and (max-height:900px){
     .menu-container {
-        top: 15.7vh;   
+        /*top: 15.7vh;*/   
+        top: 100px;
     }
 
     .menu {
-        width: 14vw;
-        height: 30vh;
+        width: 18vw;
+        height: 57.2vh;
+    }
+
+    li {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
 @media(max-width:480px){    
     .menu-container {
-        top: 15.6vh; 
+        /*top: 15.6vh;*/
+        top: 100px;
     }
 
     .menu {
