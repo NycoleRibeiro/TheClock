@@ -139,7 +139,7 @@ table {
 @media(max-width:480px){
     .modal {
         width: 80vw;
-        height: 35vh;
+        height: 28vh;
         top: 40vh;
         left: 35vw;
         background: #1a0303;
@@ -153,24 +153,32 @@ table {
         padding-top: 3px;
     }
 
-    .titleInput{
-        width: 60vw;
-        height: 3vh;
-    }
-    
-    .timeInput{
-        width: 60vw;
-        height: 3vh;
+    form{
+        padding-left: 5px;
     }
     
     .paragrafo{
         font-size: calc(15px + 0.5vw);
         color: white;
+        float: left;
+    }
+
+    .input{
+        float: left;
+    }
+
+    .sessionsInput {
+        width: 30vw;
+        height: 3vh;
     }
     
-    .observacao{
-        font-size: calc(13px + 0.3vw);
-        color: #a5a5a5;
-        margin-bottom: 20px;
+    .focustimeInput{
+        width: 30vw;
+        height: 3vh;
+    }
+    
+    .stoptimeInput{
+        width: 30vw;
+        height: 3vh;
     }
 }
