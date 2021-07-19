@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Berkshire+Swash&family=Caveat:wght@700&family=Delius+Unicase:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: #3b1212;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /*height: 100vh;*/
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+#head{
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    line-height: 100px;
+}
+
+#menuicon{
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}
+
+h1{
+    color:white;
+    font-size: calc(20px + 2.5vw);
+    font-family: 'Berkshire Swash', cursive;
+}
+
+main{
+    margin-top:18vh;
+}
+
+table{
+    width: 50vw;
+}
+
+.img{
+    border-radius: 100%;
+    border: 10px solid rgb(46, 2, 2);
+    box-shadow: whitesmoke 0px 0px 20px;
+    margin-bottom: 0.5vh;
+}
+
+.bruno{
+    width: 15vw;
+}
+
+.nycole{
+    width: 15vw;
+}
+
+#names{
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 2vw;
+}
+
+#legenda{
+    color: white;
+}
+
+@media(max-width:1370px){
+    
+}
+
+@media(max-width:480px){
+
+}
