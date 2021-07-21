@@ -10,16 +10,18 @@
 
 body {
     background-color: #3b1212;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    /*height: 100vh;*/
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+    padding-top: 10vh;
 }
 
 #head{
@@ -37,17 +39,18 @@ body {
 
 h1{
     color:white;
-    font-size: calc(20px + 2.5vw);
+    font-size: calc(20px + 2vw);
     font-family: 'Berkshire Swash', cursive;
 }
 
 main{
-    margin-top: 12vh;
+    width: 100vw;
+    height: 89.4vh;
 }
 
 h2{
     color: white;
-    font-size: calc(20px + 3vw);
+    font-size: calc(20px + 2.5vw);
     /*font-family: 'Josefin Sans', sans-serif;*/
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;

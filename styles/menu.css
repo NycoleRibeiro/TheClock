@@ -1,5 +1,7 @@
 /*CSS MENU*/
-
+#mainTitle{
+    cursor: default;
+}
 #mainTitle :hover{
     color: white;
 }
