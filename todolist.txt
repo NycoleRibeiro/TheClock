@@ -4,12 +4,11 @@ PARTE HTML E CSS
 
 PARTE JAVASCRIPT
 
-> Fazer o cronometro funcionar
-> Fazer a contagem regressiva funcionar
 > Fazer o pomodoro com código do contagem regressiva
 > Fazer o modal salvar as alterações
 > Verificação de form no modal
 > Não esquecer dos áudios
+> Audio contagem regressiva
 
 EXTRAS
 
