@@ -73,14 +73,14 @@
         <div class="modal">
             <button class="closeButton">x</button>
             <h3 class="subtitulo">Configurações da Página</h3>
-            <form id="form" action="">
+            <form id="form" action="#" method="get">
                 <p class="paragrafo">Digite o título para a contagem</p>
                 <input type="text" class="input titleInput" placeholder="Digite o título">
                 <p class="observacao">*Deixe em branco se não quiser título*</p>
                 <p class="paragrafo">Digite o tempo inicial da contagem</p>
-                <input type="text" class="input timeInput" placeholder="hh:mm:ss">
+                <input type="text" required class="input timeInput" placeholder="hh:mm:ss">
                 <p class="observacao">*Digite o tempo no formato hh:mm:ss*</p>
-                <input type="button" class="button" value="OK">
+                <input type="submit" class="button" value="OK" onclick="validar()">
             </form>
         </div>
     </div>

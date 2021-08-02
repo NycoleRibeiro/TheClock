@@ -11,7 +11,7 @@ window.onload=function(){
                 modal.classList.remove('mostrar') // ao clicar fora ou no x do modal ele fecha
             };
             if(e.target.className == 'button') {
-                modal.classList.remove('mostrar') // por enquanto ta só fechando, mas ainda tem q salvar os input
+                modal.classList.remove('mostrar')
             };
         })
     })
@@ -29,6 +29,8 @@ window.onload=function(){
         })
     })
 }
+
+
 // FUNÇÕES DO COUNTDOWN
 function iniciar (){ 
     const formatarDigito = (digito) => `0${digito}`.slice(-2);
@@ -71,5 +73,19 @@ function iniciar (){
     let valor = (hor*3600)+(min*60)+seg;
 
     contagemRegressiva(valor);
-
+}
+//Validar configurações
+function validar() {
+    // pegando o valor do nome pelos names
+    var escrito = document.querySelector("");
+    
+    // verificar se o nome está vazio
+    if (escrito.value == "") {
+      alert("Nome não informado");
+  
+      // Deixa o input com o focus
+      escrito.focus();
+      // retorna a função e não olha as outras linhas
+      return;
+    }
 }
