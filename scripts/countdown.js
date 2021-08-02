@@ -10,8 +10,15 @@ window.onload=function(){
             if(e.target.id == 'modal-settings' || e.target.className == 'closeButton') {
                 modal.classList.remove('mostrar') // ao clicar fora ou no x do modal ele fecha
             };
+            /*VALIDAÇÃO*/
             if(e.target.className == 'button') {
-                if(validado) {
+                // pegando o valor
+                var escrito = document.querySelector(".timeInput").value;
+                // verificar espaços usados
+                let quantia = escrito.length
+                if ( quantia != 8) {
+                    alert("Use o padrão: 00:00:00");
+                } else {
                     modal.classList.remove('mostrar')
                 }
             };
@@ -75,15 +82,4 @@ function iniciar (){
     let valor = (hor*3600)+(min*60)+seg;
 
     contagemRegressiva(valor);
-}
-//Validar configurações
-function validar() {
-    // pegando o valor
-    var escrito = document.querySelector(".timeInput");
-    
-    // verificar se o nome está vazio
-    if (escrito.value == "") {
-      alert("Nome não informado");
-      
-    }
 }
