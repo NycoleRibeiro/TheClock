@@ -13,13 +13,18 @@ window.onload=function(){
             /*VALIDAÇÃO*/
             if(e.target.className == 'button') {
                 // pegando o valor
-                var escrito = document.querySelector(".timeInput").value;
+                let tempoSolicitado = document.querySelector(".timeInput").value;
+                let hor = tempoSolicitado.slice(0,2);
+                let min = tempoSolicitado.slice(3,5);
+                let seg = tempoSolicitado.slice(6,8);
                 // verificar espaços usados
-                let quantia = escrito.length
-                if ( quantia != 8) {
+                let quantia = tempoSolicitado.length
+                if (quantia != 8) {
                     alert("Use o padrão: 00:00:00");
+                } else if (isNaN(hor) || isNaN(min) || isNaN(seg)) {
+                    alert("Use apenas números no padrão 00:00:00");
                 } else {
-                    modal.classList.remove('mostrar')
+                    modal.classList.remove('mostrar');
                 }
             };
         })
@@ -42,6 +47,10 @@ window.onload=function(){
     
 // FUNÇÕES DO COUNTDOWN
 function iniciar (){ 
+    qtdSegundos = 0;
+    qtdMinutos = 0;
+    qtdHoras = 0;
+
     const formatarDigito = (digito) => `0${digito}`.slice(-2);
 
     const atualizar = (tempo) => {
