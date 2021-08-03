@@ -32,6 +32,17 @@ window.onload=function(){
     })
 }
 
+function pomo (){
+    let ciclos = document.querySelector('.sessionsInput');
+    let foco = document.querySelector('.focustimeInput');
+    let pausa = document.querySelector('.stoptimeInput');
+    for (var i = 0; i < 9; i++) {
+        console.log(i);
+        // more statements
+     }
+}
+
+
 function iniciar (){ 
     const formatarDigito = (digito) => `0${digito}`.slice(-2);
 
