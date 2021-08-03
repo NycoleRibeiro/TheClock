@@ -72,6 +72,8 @@ function iniciar (){
 
         const contar = () => {
         if (tempo == 0){
+            const audio = document.querySelector('audio')
+            audio.play()
             pararContagem();
         }
         atualizar (tempo);
@@ -90,5 +92,8 @@ function iniciar (){
     let seg = parseInt(tempoSolicitado.slice(6,8));
     let valor = (hor*3600)+(min*60)+seg;
 
+
     contagemRegressiva(valor);
+
+    
 }
