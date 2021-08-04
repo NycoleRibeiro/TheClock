@@ -1,12 +1,11 @@
 PARTE HTML E CSS
 
->
+> Adicionar página de criadores
 
 PARTE JAVASCRIPT
 
 > Fazer o pomodoro com código do contagem regressiva
 > Fazer o modal salvar as alterações
-> Verificação de form no modal
 > Não esquecer dos áudios
 > Audio contagem regressiva
 
