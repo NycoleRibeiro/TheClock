@@ -12,7 +12,7 @@ window.onload=function(){
             };
             if(e.target.className == 'button') {
                 modal.classList.remove('mostrar')
-                iniciar();
+                start();
             };
         })
     })
@@ -32,57 +32,70 @@ window.onload=function(){
     })
 }
 
-function pomo (){
-    let ciclos = document.querySelector('.sessionsInput');
-    let foco = document.querySelector('.focustimeInput');
-    let pausa = document.querySelector('.stoptimeInput');
-    for (var i = 0; i < 9; i++) {
+function iniciar (){ 
+    // Pegando o tempo de foco
+    let focusTime = document.querySelector(".focustimeInput").value;
+    let horaFoco = parseInt(focusTime.slice(0,2));
+    let minFoco = parseInt(focusTime.slice(3,5));
+    let segFoco = parseInt(focusTime.slice(6,8));
+    // Pegando tempo de pausa
+    let restTime = document.querySelector(".stoptimeInput").value;
+    let horaPause = parseInt(restTime.slice(0,2));
+    let minPause = parseInt(restTime.slice(3,5));
+    let segPause = parseInt(restTime.slice(6,8));
+    // Pegando quantidade de sessões
+    let session = document.querySelector(".sessionsInput").value;
+    // Texto da qtd de sessions
+    let textSession = document.querySelector(".sessions_number");
+
+    for (var i = parseInt(session); i > 0; i--) {
+        textSession.innerHTML = i;
         console.log(i);
-        // more statements
-     }
+    }
 }
 
+function start() {
+    // Carregando sons
+    var click = new Audio('sounds/click.mp3');
+    var bell = new Audio('sounds/bell.mp3');
+    click.play();
 
-function iniciar (){ 
+    hours = 1;
+    minutes = 24;
+    seconds = 59;
+
+    const segundos = document.getElementById('segundos');
+    const minutos = document.getElementById('minutos');
+    const horas = document.getElementById('horas');
+    segundos.innerHTML = seconds;
+    minutos.innerHTML = minutes;
+    horas.innerHTML = hours;
+
+    var hours_interval = setInterval(hoursTimer, 3600000);
+    var minutes_interval = setInterval(minutesTimer, 60000);
+    var seconds_interval = setInterval(secondsTimer, 1000);
+
     const formatarDigito = (digito) => `0${digito}`.slice(-2);
 
-    const atualizar = (tempo) => {
-        const segundos = document.getElementById('segundos');
-        const minutos = document.getElementById('minutos');
-        const horas = document.getElementById('horas');
+    function secondsTimer() {
+        seconds--;
+        segundos.innerHTML = formatarDigito(seconds);
+        if (seconds <= 0) {
+            minutes--;
+            seconds = 59;
+            if (minutes <= 0) {
+                hours--;
+                minutes = 59;
+                if (hours <= 0) {
+                    clearInterval(hours_interval);
+                    clearInterval(minutes_interval);
+                    clearInterval(seconds_interval);
 
-        const qtdSegundos = tempo % 60;
-        const qtdMinutos = Math.floor((tempo % 3600) / 60);
-        const qtdHoras = Math.floor((tempo % 86400) / 3600);
-        
-        segundos.textContent = formatarDigito(qtdSegundos);
-        minutos.textContent = formatarDigito(qtdMinutos);
-        horas.textContent = formatarDigito(qtdHoras);
-    }
-
-    const contagemRegressiva = (tempo) =>{
-        const pararContagem = () => clearInterval(id);
-
-        const contar = () => {
-        if (tempo == 0){
-            pararContagem();
+                    document.querySelector('.frase').innerHTML = "Hora da Pausa";
+                }
+            }
+        } else {
+            segundos.innerHTML = seconds;
         }
-        atualizar (tempo);
-        tempo--;
-        }
-        const id = setInterval(contar,1000);
     }
-
-    let titulo = document.querySelector(".titleInput").value;
-    let newtitle = document.querySelector("#title");
-    newtitle.innerHTML = titulo
-
-    let tempoSolicitado = document.querySelector(".timeInput").value;
-    let hor = parseInt(tempoSolicitado.slice(0,2));
-    let min = parseInt(tempoSolicitado.slice(3,5));
-    let seg = parseInt(tempoSolicitado.slice(6,8));
-    let valor = (hor*3600)+(min*60)+seg;
-
-    contagemRegressiva(valor);
-
 }
