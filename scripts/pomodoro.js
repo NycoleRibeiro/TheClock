@@ -12,18 +12,23 @@ window.onload=function(){
             };
             /*VALIDAÇÃO*/
             if(e.target.className == 'button') {
-                // pegando o valor
-                let tempoSolicitado = document.querySelector(".focustimeInput").value;
-                let min = tempoSolicitado.slice(0,2);
-                let seg = tempoSolicitado.slice(3,5);
+                // pegando os valores
+                let tempoFoco = document.querySelector(".focustimeInput").value;
+                let minFoco = tempoFoco.slice(0,2);
+                let segFoco = tempoFoco.slice(3,5);
+                let tempoPausa = document.querySelector(".stoptimeInput").value;
+                let minPausa = tempoPausa.slice(0,2);
+                let segPausa = tempoPausa.slice(3,5);
                 // verificar espaços usados
-                let quantia = tempoSolicitado.length
-                if (quantia != 5) {
+                let tamanho = tempoFoco.length
+                let tamanho2 = tempoPausa.length
+                if (tamanho != 5 || tamanho2 != 5) {
                     alert("Use o padrão: 00:00");
-                } else if (isNaN(min) || isNaN(seg)) {
+                } else if (isNaN(minFoco) || isNaN(segFoco) || isNaN(minPausa) || isNaN(segPausa)) {
                     alert("Use apenas números no padrão 00:00");
                 } else {
                     modal.classList.remove('mostrar');
+                    startTimer()
                 }
             };
         })
@@ -42,6 +47,11 @@ window.onload=function(){
             };
         })
     })
+}
+
+function startTimer(){
+    // Sons
+    let bell = new Audio('sounds/bell.mp3');
 
     // FUNÇÕES DO TIMER DO POMODORO
     let start = document.getElementById('start');
@@ -68,6 +78,11 @@ window.onload=function(){
     PauseMin.innerHTML = minPausa;
     PauseSec.innerHTML = segPausa;
 
+    //Pegando o número de ciclos
+    let ciclos = document.querySelector(".sessionsInput").value;
+    let cicloAtual = document.getElementById('counter');
+    cicloAtual.innerHTML = ciclos;
+
     let startTimer;
 
     start.addEventListener('click', function(){
@@ -79,13 +94,13 @@ window.onload=function(){
     })
 
     reset.addEventListener('click', function(){
-        focusMin.innerText = "00";
-        focusSec.innerText = "00";
+        focusMin.innerHTML = minFoco;
+        focusSec.innerHTML = segFoco;
 
-        PauseMin.innerText = "00";
-        PauseSec.innerText = "00";
+        PauseMin.innerHTML = minPausa;
+        PauseSec.innerHTML = segPausa;
 
-        document.getElementById('counter').innerText = 0;
+        cicloAtual.innerHTML = ciclos;
         stopInterval()
         startTimer = undefined;
     })
@@ -98,7 +113,7 @@ window.onload=function(){
 
     //Start Timer Function
     function timer(){
-        //Work Timer Countdown
+        //Focus Timer Countdown
         if(focusSec.innerText != 0){
             focusSec.innerText--;
         } else if(focusMin.innerText != 0 && focusSec.innerText == 0){
@@ -106,8 +121,9 @@ window.onload=function(){
             focusMin.innerText--;
         }
 
-        //Break Timer Countdown
+        //Pause Timer Countdown
         if(focusMin.innerText == 0 && focusSec.innerText == 0){
+            bell.play();
             if(PauseSec.innerText != 0){
                 PauseSec.innerText--;
             } else if(PauseMin.innerText != 0 && PauseSec.innerText == 0){
@@ -116,15 +132,18 @@ window.onload=function(){
             }
         }
 
-        //Increment Counter by one if one full cycle is completed
+        //Decrementa o contador em um se completar um ciclo inteiro
         if(focusMin.innerText == 0 && focusSec.innerText == 0 && PauseMin.innerText == 0 && PauseSec.innerText == 0){
-            focusMin.innerText = 25;
-            focusSec.innerText = "00";
+            if (cicloAtual.innerText == 1){
+                stopInterval();
+            }
+            focusMin.innerHTML = minFoco;
+            focusSec.innerHTML = segFoco;
 
-            PauseMin.innerText = 5;
-            PauseSec.innerText = "00";
+            PauseMin.innerHTML = minPausa;
+            PauseSec.innerHTML = segPausa;
 
-            document.getElementById('counter').innerText++;
+            cicloAtual.innerText--;
         }
     }
 

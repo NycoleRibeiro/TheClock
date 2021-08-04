@@ -49,9 +49,7 @@ main{
 .label {
     align-self: center;
     justify-self: center;
-
-    font-size: 30px;
-    font-weight: bold;
+    font-size: calc(6px + 1vw);
 }
 
 #work {
@@ -68,7 +66,6 @@ main{
     display: flex;
     align-self: center;
     justify-self: center;
-
     font-size: 30px;
     font-weight: bold;
 }
@@ -80,15 +77,20 @@ p {
 
 #counter {
     grid-area: 2 / 3 / 2 / 3;
-    color: white;
+    font-size: calc(10px + 10vw);
+    text-shadow: 0 0 20px rgb(228, 153, 153);
 }
 
 #work-timer {
     grid-area: 2 / 2 / 2 / 2;
+    font-size: calc(10px + 5vw);
+    text-shadow: 0 0 10px whitesmoke;
 }
 
 #break-timer {
     grid-area: 2 / 4 / 2 / 4;
+    font-size: calc(10px + 5vw);
+    text-shadow: 0 0 10px whitesmoke;
 }
 
 /*buttons*/
