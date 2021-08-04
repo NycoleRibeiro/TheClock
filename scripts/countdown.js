@@ -46,11 +46,7 @@ window.onload=function(){
 
     
 // FUNÇÕES DO COUNTDOWN
-function iniciar (){ 
-    qtdSegundos = 0;
-    qtdMinutos = 0;
-    qtdHoras = 0;
-
+function iniciar (){
     const formatarDigito = (digito) => `0${digito}`.slice(-2);
 
     const atualizar = (tempo) => {
