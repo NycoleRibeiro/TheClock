@@ -49,6 +49,13 @@ body{
     width: 50vw;
     height: 50vh;
 }
+#creators{
+    position: absolute;
+    bottom: 3vh;
+    left: 43vw;
+    font-size: 4vw;
+}
+
  @media(max-width:1370px) and (max-height:900px){
     /*#caixa{
         position: absolute;

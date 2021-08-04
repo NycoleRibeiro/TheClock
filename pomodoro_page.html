@@ -43,22 +43,22 @@
 
     <main>
         <div class="container">
-            <div class="countdown">
-                <div>
-                    <h1 id="horas">00</h1>
-                    <p>Horas</p>
-                </div>
-                <div>
-                    <h1 id="minutos">00</h1>
-                    <p>Minutos</p>
-                </div>
-                <div>
-                    <h1 id="segundos">00</h1>
-                    <p>Segundos</p>
-                </div>
+            <p id="work" class="label">foco</p><p id="break" class="label">pausa</p><p id="cycles" class="label">ciclos</p>
+            <!--Foco Timer-->
+            <div id="work-timer" class="timer">
+                <p id="focus_minutes">00</p><p class="semicolon">:</p><p id="focus_seconds">00</p>
             </div>
-            <div class="frase">Tempo de foco...</div>
-            <div class="sessions">Sessões Restantes: <span class="sessions_number">3</span></div>
+
+            <!--Cycle Counter-->
+            <p id="counter" class="timer">1</p>
+
+            <!--Break Timer-->
+            <div id="break-timer" class="timer">
+                <p id="pause_minutes">00</p><p class="semicolon">:</p><p id="pause_seconds">00</p>
+            </div>
+            <button id="start" class="btn">iniciar</button>
+            <button id="stop" class="btn">pausar</button>
+            <button id="reset" class="btn">zerar</button>
             <div class="settings">
                 <img class="config" src="imgs/settings50.png">
             </div>
@@ -76,8 +76,8 @@
                         <td><p class="paragrafo">Tempo de pausa</p></td>
                     </tr>
                     <tr>
-                        <td><input type="text" class="input focustimeInput" value="00:30:00"></td>
-                        <td><input type="text" class="input stoptimeInput" value="00:15:00"></td>
+                        <td><input type="text" class="input focustimeInput" value="30:00"></td>
+                        <td><input type="text" class="input stoptimeInput" value="15:00"></td>
                     </tr>
                     <tr>
                         <td>
