@@ -97,10 +97,9 @@ a :hover{
 
     main{
         background-image: url("imgs/backgroundClock900.png");
-    }
-
-    #navigation{
-        margin-top: -2.5vh;
+        box-shadow: none;
+        margin-top: -5vh;
+        width: 100vw;
     }
 
     a{
