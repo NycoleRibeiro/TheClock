@@ -120,14 +120,16 @@ a :hover{
     }
     img.helpicon{
         width: 26px;
-        padding-bottom: 14px;
+        padding-bottom: 8px;
         margin-right: 25px;
     }
     main{
         background-image: url("imgs/backgroundClock360.png");
+        box-shadow: none;
+        margin-top: -7vh;
     }
     
     #navigation{
-        padding-top: 2vh;
+        padding-top: 4vh;
     }
 }
