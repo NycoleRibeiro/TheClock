@@ -49,6 +49,7 @@ window.onload=function(){
     })
 }
 
+// Função do pomodoro
 function startTimer(){
     // Sons
     let alarme = new Audio('sounds/bell.mp3');

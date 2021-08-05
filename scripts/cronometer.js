@@ -21,6 +21,8 @@ let ss = 0;
 const tempo = 1000; // tempo em milésimos
 let cronometer;
 
+//Botções de interação como pausar, zerar e iniciar
+
 function start() {
     cronometer = setInterval(() => { timer(); }, tempo);
 }
@@ -39,6 +41,7 @@ function stop() {
     document.getElementById("minutos").innerText = '00';
     document.getElementById("horas").innerText = '00';
 }
+// Função do cronômetro
 
 function timer() {
     ss++;
