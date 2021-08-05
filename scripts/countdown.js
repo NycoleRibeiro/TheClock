@@ -68,7 +68,7 @@ function iniciar (){
 
         const contar = () => {
         if (tempo == 0){
-            const audio = document.querySelector('audio')
+            let audio = new Audio('sounds/despertador.wav');
             audio.play()
             pararContagem();
         }
