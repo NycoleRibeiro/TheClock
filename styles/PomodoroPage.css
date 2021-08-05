@@ -81,13 +81,13 @@ p {
     text-shadow: 0 0 20px rgb(228, 153, 153);
 }
 
-#work-timer {
+#focus-timer {
     grid-area: 2 / 2 / 2 / 2;
     font-size: calc(10px + 5vw);
     text-shadow: 0 0 10px whitesmoke;
 }
 
-#break-timer {
+#pause-timer {
     grid-area: 2 / 4 / 2 / 4;
     font-size: calc(10px + 5vw);
     text-shadow: 0 0 10px whitesmoke;

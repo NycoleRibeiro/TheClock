@@ -51,7 +51,7 @@ window.onload=function(){
 
 function startTimer(){
     // Sons
-    let bell = new Audio('sounds/bell.mp3');
+    let alarme = new Audio('sounds/bell.mp3');
 
     // FUNÇÕES DO TIMER DO POMODORO
     let start = document.getElementById('start');
@@ -111,9 +111,9 @@ function startTimer(){
     })
 
 
-    //Start Timer Function
+    //Iniciando timer
     function timer(){
-        //Focus Timer Countdown
+        //Contagem regressiva do tempo de foco
         if(focusSec.innerText != 0){
             focusSec.innerText--;
         } else if(focusMin.innerText != 0 && focusSec.innerText == 0){
@@ -121,9 +121,9 @@ function startTimer(){
             focusMin.innerText--;
         }
 
-        //Pause Timer Countdown
+        //Pausa a contagem regressiva
         if(focusMin.innerText == 0 && focusSec.innerText == 0){
-            bell.play();
+            alarme.play();
             if(PauseSec.innerText != 0){
                 PauseSec.innerText--;
             } else if(PauseMin.innerText != 0 && PauseSec.innerText == 0){
@@ -144,11 +144,11 @@ function startTimer(){
             PauseSec.innerHTML = segPausa;
 
             cicloAtual.innerText--;
-            bell.play();
+            alarme.play();
         }
     }
 
-        //Stop Timer Function
+        //Função para finalizar o timer
         function stopInterval(){
             clearInterval(startTimer);
         }

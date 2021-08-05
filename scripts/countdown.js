@@ -6,11 +6,11 @@ window.onload=function(){
     configButton.addEventListener('click', () => {
         modal.classList.toggle('mostrar');
         modal.addEventListener('click', (e) => {
-            //console.log(e.target) //para saber onde ta clicando
+
             if(e.target.id == 'modal-settings' || e.target.className == 'closeButton') {
                 modal.classList.remove('mostrar') // ao clicar fora ou no x do modal ele fecha
             };
-            /*VALIDAÇÃO*/
+            // VALIDAÇÃO
             if(e.target.className == 'button') {
                 // pegando o valor
                 let tempoSolicitado = document.querySelector(".timeInput").value;
@@ -88,8 +88,5 @@ function iniciar (){
     let seg = parseInt(tempoSolicitado.slice(6,8));
     let valor = (hor*3600)+(min*60)+seg;
 
-
     contagemRegressiva(valor);
-
-    
 }
