@@ -140,10 +140,10 @@ function startTimer(){
             }
             focusMin.innerHTML = minFoco;
             focusSec.innerHTML = segFoco;
-
+            
             PauseMin.innerHTML = minPausa;
             PauseSec.innerHTML = segPausa;
-
+            
             cicloAtual.innerText--;
             alarme.play();
         }
