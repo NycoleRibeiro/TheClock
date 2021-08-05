@@ -150,7 +150,6 @@ p {
 }
 
 
-
 @media(max-width:1370px) and (max-height:900px){
     .sessions{
         font-size: 20px;
@@ -159,6 +158,10 @@ p {
     
     .container {
         height: 72vh;     
+    }
+
+    main{
+        margin-top: 0vh;
     }
 }
 

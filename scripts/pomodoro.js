@@ -144,6 +144,7 @@ function startTimer(){
             PauseSec.innerHTML = segPausa;
 
             cicloAtual.innerText--;
+            bell.play();
         }
     }
 

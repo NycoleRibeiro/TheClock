@@ -97,12 +97,26 @@ li {
 
 @media(max-width:480px){    
     .menu-container {
-        /*top: 15.6vh;*/
-        top: 100px;
+        top: 15.6vh;
     }
 
     .menu {
-        width: 40vw;
-        height: 27vh;
+        width: 100vw;
+        height: 56.8vh;
+    }
+
+    li {
+        border-left: none;
+    }
+
+    @keyframes menu {
+        from {
+            opacity: 0;
+            transform: translate3d(0px, 0px, 100px);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
     }
 }
