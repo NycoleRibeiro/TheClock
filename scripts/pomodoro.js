@@ -52,7 +52,7 @@ window.onload=function(){
 // Função do pomodoro
 function startTimer(){
     // Sons
-    let alarme = new Audio('sounds/bell.mp3');
+    let alarme = new Audio('sounds/alarme.mp3');
 
     // FUNÇÕES DO TIMER DO POMODORO
     let start = document.getElementById('start');
