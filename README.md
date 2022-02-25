@@ -1,6 +1,8 @@
 # TheClocks
 
-## AINDA NÃO FINALIZADO, ESTÁ EM FASE DE CRIAÇÃO
+## AINDA NÃO FINALIZADO
+
+Projeto criado para disciplina de Sistemas para Internet II
 
 Site com vários tipos de marcação de tempo
 * Cronômetro
